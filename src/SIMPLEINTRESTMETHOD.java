@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class SIMPLEINTRESTMETHOD {
+
+    // Method
+    public static double calculateSI(double p, double r, double t) {
+
+        return (p * r * t) / 100;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Principal Amount: ");
+        double principal = sc.nextDouble();
+
+        System.out.print("Enter Rate: ");
+        double rate = sc.nextDouble();
+
+        System.out.print("Enter Time: ");
+        double time = sc.nextDouble();
+
+        double si = calculateSI(principal, rate, time);
+
+        System.out.println("Simple Interest: " + si);
+    }
+}
